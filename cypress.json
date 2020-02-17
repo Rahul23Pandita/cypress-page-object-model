@@ -1,0 +1,9 @@
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+    "baseUrl": "https://ultimateqa.com",
+    "watchForFileChanges":true,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporter.json"
+    }
+}
