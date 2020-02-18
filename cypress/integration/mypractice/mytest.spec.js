@@ -1,9 +1,14 @@
 /// <reference types="cypress"/>
 
+
 describe("Simple HTML test", () => {
 
-it('should navigate to Home Page',()=>{
+beforeEach(()=>{
     cy.visit('/simple-html-elements-for-automation/') //navigate to website
+})
+
+it('should navigate to Home Page and send the value to text boxes',()=>{
+    
     
     cy.get('input[data-original_id="name"]')
     .type("Molly")
