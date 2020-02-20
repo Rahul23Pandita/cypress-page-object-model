@@ -1,7 +1,9 @@
 # cypress-sample-tests
 
 
-Go to project folder
+Go to project folder:
+
+npm install
 
 To open GUI:
 
