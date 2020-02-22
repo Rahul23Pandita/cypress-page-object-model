@@ -3,6 +3,7 @@
 
 Go to project folder:
 
+Use below command to install dependencies - 
 npm install
 
 To open GUI:
