@@ -7,16 +7,16 @@ Use below command to install dependencies -
 
 npm install
 
-To open GUI:
+To open Cypress GUI in interactive mode:
 
 npx cypress open
 
 
-To run via command line:
+To run Cypress via command line:
 
 npx cypress run
 
-merge the reports:
+merge the mochawesome reports:
 
 npx mochawesome-merge cypress/reports/mochawesome/*.json > cypress/reports/mochawesome.json
 
