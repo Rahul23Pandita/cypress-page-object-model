@@ -1,12 +1,14 @@
 export class HomePage {
     navigate()
     {
-        cy.visit("/simple-html-elements-for-automation/")
+        cy.visit("/")
     }
 
-    validateText(id, text){
-        cy.get(`input[data-original_id=${id}]`)
-        .type(text).should("have.value", text) 
+    searchByKeyword(text){
+        cy.get(`input[type=search]`).type(text)
+        cy.get('button[type=submit]').type('{enter}')
+        cy.get(`input[type=search]`).clear()  
+
     }
 
 }

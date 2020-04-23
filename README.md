@@ -1,26 +1,17 @@
-# cypress-sample-tests
+
+This is a simple Cypress Page Object Model Test setup for learning.
+Please star this if it helps you :)
+
+Clone the repo and from project folder:
 
 
-Go to project folder:
-
-Use below command to install dependencies - 
-
-npm install
-
-To open Cypress GUI in interactive mode:
-
-npx cypress open
+1. npm install
 
 
-To run Cypress via command line:
+2. npx cypress open (GUI mode)
+and click on self>npm_spec.js
 
-npx cypress run
+OR
 
-merge the mochawesome reports:
-
-npx mochawesome-merge cypress/reports/mochawesome/*.json > cypress/reports/mochawesome.json
-
-Generate HTML reports: 
-
-npx mochawesome-report-generator --reportDir cypress/reports/ --cdn true --charts true cypress/reports/mochawesome.json
-
+3. npx cypress run (CLI mode)
+npx cypress run --spec cypress/integration/self/npm_spec.js
